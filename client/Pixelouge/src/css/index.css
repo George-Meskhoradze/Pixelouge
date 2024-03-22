@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282F37;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C01E2E;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background: #282F37;
+  border-bottom: 1.5px solid rgb(110, 110, 110);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 4rem;
+}
+
+.header img {
+  width: 3rem;
+  height: 3.1rem;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.header nav {
+  width: 27rem;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header nav ul li {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  padding: 0 5px;
+}
+
+.header nav ul li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  background:#C01E2E;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+
+.header nav ul li:hover::after {
+  width: 100%;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background: #282F37;
+}
+
+.bannerSection {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+}
+
+.bannerSection h1 {
+  height: 5rem;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.autotext {
+  color: #C01E2E;
+}
+
+.bannerSection img {
+  width: 450px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.bannercontone {
+  width: 50%;
+  height: 25rem;
+  padding: 3rem 0rem 0rem 3rem;
+}
+
+.bannerconttwo {
+  width: 50%;
+  height: 25rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem 6rem;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  width: 100%;
+  height: 15rem;
+}
