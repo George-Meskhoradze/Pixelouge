@@ -7,44 +7,29 @@ export default function Section() {
     words: [' მე ვარ გიორგი, Full-Stack დეველოპერი', ' მიხარია რომ გვეწვიეთ!'],
     loop: {},
     typeSpeed: 100,
-    delaySpeed: 50,
+    delaySpeed: 100,
     deleteSpeed: 30,
-  })
-
-  const [description] = useTypewriter({
-    words: [
-    'მოგესალმებით, ჩვენ ვართ კომპანია ფიქსელლაუჯი სადაც შეძლებთ დაამზადოთ თქვენი სურვილისამებრ ვებ-საიტები რომელებიც მორგებული იქნება თქვნს მიზნებზე და სურვილებზე',
-    'ჩვენთვის პრიორიტეტულია ჩვენი მომხმარებლის სურვილები და ვცდილობთ მაქსიმალურად მალე მოხერხდეს პროდუქტის დამზადება და მიწოდება'],
-    loop: {},
-    typeSpeed: 30,
-    delaySpeed: 10,
-    deleteSpeed:20,
   })
 
   return (
     <>
     <section className='section'>
       <div className="bannerSection">
-
         <div className='bannercontone'>
-          <div>
-            <h1>
-              გამარჯობა, 
-              <span className='autotext'>
-                {text}
-              </span>
-              <span className='cursor'>
-                <Cursor/>
-              </span>
-            </h1>
-          </div>
-
-          <div>
-            <p className='paragraph'>
-              {description}
+          <h1>
+            გამარჯობა, 
+            <span className='autotext'>
+              {text}
+            </span>
+            <span className='cursor'>
               <Cursor/>
-            </p>
-          </div>
+            </span>
+          </h1>
+
+          <p className='paragraph'>
+          მოგესალმებით, ჩვენ ვართ კომპანია ფიქსელლაუჯი სადაც შეძლებთ დაამზადოთ თქვენი სურვილისამებრ ვებ-საიტები რომელებიც მორგებული იქნება თქვნს მიზნებზე და სურვილებზე,
+          ჩვენთვის პრიორიტეტულია ჩვენი მომხმარებლის სურვილები და ვცდილობთ მაქსიმალურად მალე მოხერხდეს პროდუქტის დამზადება და მიწოდება.
+          </p>
         </div>
 
         <div className='bannerconttwo'>

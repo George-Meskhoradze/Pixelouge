@@ -20,7 +20,7 @@
   width: 100%;
   height: 5rem;
   background: #282F37;
-  border-bottom: 1.5px solid rgb(110, 110, 110);
+  border-bottom: 2px solid rgb(110, 110, 110);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,6 +96,7 @@
 }
 
 .bannerSection h1 {
+  width: 100%;
   height: 5rem;
   font-size: 30px;
   font-weight: 700;
@@ -117,6 +118,9 @@
   width: 50%;
   height: 25rem;
   padding: 3rem 0rem 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bannerconttwo {
@@ -124,13 +128,61 @@
   height: 25rem;
   display: flex;
   justify-content: flex-end;
-  padding: 3rem 6rem;
+  padding: 3rem 5rem 0rem 1rem;
 }
 
 .paragraph {
+  height: 10rem;
   font-size: 20px;
   font-weight: 500;
   color: white;
+  text-align: start;
+  line-height: 40px;
+  margin-top: 3rem;
+}
+
+
+.footer {
   width: 100%;
   height: 15rem;
+  background: #282F37;
+  border-top: 2px solid rgb(110, 110, 110);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer h1 {
+  height: 3rem;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.container div {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5px;
+  background: rgb(35, 35, 35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container div:hover {
+  transform: scale(1.1)
 }

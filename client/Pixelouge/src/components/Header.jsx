@@ -12,7 +12,7 @@ export default function Header() {
                 <li><a href=""></a>მთავარი</li>
                 <li><a href=""></a>მეორე</li>
                 <li><a href=""></a>მესამე</li>
-                <li><a href=""></a>მეოთხე</li>
+                <li><a href=""></a>კონტაქტი</li>
             </ul>
         </nav>
     </header>
